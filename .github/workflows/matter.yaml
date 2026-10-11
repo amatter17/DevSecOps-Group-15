@@ -23,6 +23,8 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run dev job
         run: echo "Running DEV job"
+      - name: what files are there?
+        run: ls -la
 
   prod:
     if: ${{ inputs.env == 'prod' }}
@@ -32,3 +34,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run prod job
         run: echo "Running PROD job"
+      - name: what files are there?
+        run: ls -la
