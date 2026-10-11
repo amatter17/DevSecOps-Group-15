@@ -19,8 +19,13 @@ def divide(a, b):
         return "Error: Division by zero is not allowed"
     return a / b
 
+def power(a, b):
+    """Return a raised to the power of b."""
+    return a ** b
+
 
 print("Addition:", add(10, 5))
 print("Subtraction:", subtract(10, 5))
 print("Multiplication:", multiply(10, 5))
 print("Division:", divide(10, 5))
+print("Power:", power(2, 3))
